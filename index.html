@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="compro.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <nav class="px-5-me w-full flex items-center justify-between fixed-top desktop py-1.5">
+      <div class="flex gap-56 items-center">
+        <img src="bahan/mlaku2line.png" alt="" />
+        <div class="menu flex gap-16 text-xl">
+          <a href="#home" class="aktif item ahome">Home</a>
+          <a href="#about" class="item aabout">About</a>
+          <a href="#why" class="item awhy">Why</a>
+        </div>
+      </div>
+      <div class="masuk flex text-xl items-center gap-4 px-5 py-3 bg-teal-900 rounded-lg">
+        <span class="text-white">Login</span>
+        <div class="signup text-teal-900 bg-white px-4 py-1 rounded-md">SignUp</div>
+      </div>
+    </nav>
+
+    <nav class="mobile" style="display: none">
+      <div class="max-window navbar">
+        <img src="bahan/logo-mlaku.png" alt="" class="logo" width="50px" height="50px" />
+        <img src="bahan/logo-mlaku.png" alt="" class="menu" width="45px" height="40px" />
+      </div>
+      <div class="ditoggle w-100" style="display: none">
+        <div class="toggle-nav w-100 items d-flex flex-column px-4 bg-white mt-4">
+          <a href="#home" class="ahome item aktif" style="padding-left: 20px; padding-right: 20px">Home</a>
+          <a href="#about" class="aabout item" style="padding-left: 20px; padding-right: 20px">About</a>
+          <a href="#why" class="awhy item" style="padding-left: 20px; padding-right: 20px">why</a>
+
+          <div class="login-daftar mt-4">
+            <div class="akun d-flex align-items-center justify-content-end gap-2">
+              <span>Login</span>
+              <div class="signup">SignUp</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="se1 w-full h-screen">
+      <div class="kanan w-3/5 bg-teal-900 h-full px-5-me flex flex-col justify-center">
+        <img src="bahan/mlaku-.png" alt="" class="mlaku" />
+        <span class="text-2xl text-white">Temukan destinasi wisatamu dan bagikan pengalamanmu.</span>
+        <div class="mt-16">
+          <button class="py-2 px-6 bg-white font-extrabold text-3xl text-teal-900 rounded-full flex items-center gap-3">
+            Download Aplikasi <img src="bahan/bx-donwload.png" alt="" width="40px" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  $(document).on("click", ".menu", function () {
+    $(".ditoggle").fadeToggle("fast");
+    $("nav.mobile").toggleClass("aktif");
+  });
+  $(document).on("click", "nav .items a", function () {
+    // $("nav .items a").removeClass("aktif");
+    // $(this).addClass("aktif");
+  });
+
+  // $(window).scroll(function () {
+  //   let scroll = $(window).scrollTop();
+  //   if (scroll > 10) {
+  //     $("nav").css({ background: "white" });
+  //     $("nav.desktop").addClass("aktif");
+  //   } else {
+  //     $("nav").css({ background: "transparent" });
+  //     $("nav.desktop").removeClass("aktif");
+  //   }
+  // });
+
+  $(window).on("scroll touchmove", function () {
+    $("nav .item").removeClass("aktif");
+    if ($(document).scrollTop() == $(".se1").position().top) {
+      $("nav .item").removeClass("aktif");
+      $(".ahome").addClass("aktif");
+    }
+    if ($(document).scrollTop() > $(".se1").position().top) {
+      $("nav .item").removeClass("aktif");
+      $(".ahome").addClass("aktif");
+    }
+    if ($(document).scrollTop() >= $(".se2").position().top) {
+      $("nav .item").removeClass("aktif");
+      $(".aabout").addClass("aktif");
+    }
+    if ($(document).scrollTop() >= $(".se3").position().top) {
+      $("nav .item").removeClass("aktif");
+      $(".awhy").addClass("aktif");
+    }
+  });
+</script>

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Capriola&family=Chewy&family=Work+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Noto+Sans:wght@500&family=Outfit:wght@500&display=swap");
+
+* {
+  font-family: "Work Sans", sans-serif;
+  color: #184d70;
+}
+.ff-capriola {
+  font-family: "Capriola", sans-serif;
+}
+.ff-chewy {
+  font-family: "Chewy", sans-serif;
+}
+
+.ff-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.ff-noto {
+  font-family: "Noto Sans", sans-serif;
+}
+.ff-outfit {
+  font-family: "Outfit", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav.desktop img {
+  width: 100px;
+}
+
+.max-window {
+  max-width: 1000px;
+}
+
+.fixed-top {
+  position: fixed;
+}
+
+.se1 {
+  background-image: url(https://source.unsplash.com/random/?waterfall);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.px-5-me {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.se1 .kanan .mlaku {
+  width: 700px;
+  margin-left: -6px;
+}
+
+nav a {
+  color: white;
+}
+
+.masuk span,
+.masuk .signup {
+  font-weight: 800;
+}
