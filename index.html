@@ -17,10 +17,12 @@
     <nav class="px-5-me w-full flex items-center justify-between fixed-top desktop py-1.5">
       <div class="flex gap-56 items-center">
         <img src="bahan/mlaku2line.png" alt="" />
-        <div class="menu flex gap-16 text-xl">
-          <a href="#home" class="aktif item ahome">Home</a>
-          <a href="#about" class="item aabout">About</a>
-          <a href="#why" class="item awhy">Why</a>
+        <div class="menu flex gap-16 text-xl items-center">
+          <a href="#home" class="aktif item ahome font-medium ff-outfit">Home</a>
+          <a href="#jelajah" class="item ajelajah font-medium ff-outfit">Jelajah</a>
+          <a href="#sewa" class="item asewa font-medium ff-outfit">Sewa</a>
+          <a href="#review" class="item areview font-medium ff-outfit">Review</a>
+          <a href="#faq" class="item afaq font-medium ff-outfit">FAQ</a>
         </div>
       </div>
       <div class="masuk flex text-xl items-center gap-4 px-5 py-3 bg-teal-900 rounded-lg">
@@ -49,21 +51,272 @@
         </div>
       </div>
     </nav>
-    <div class="se1 w-full h-screen">
+    <div class="se1 w-full h-screen" id="home">
       <div class="kanan w-3/5 bg-teal-900 h-full px-5-me flex flex-col justify-center">
         <img src="bahan/mlaku-.png" alt="" class="mlaku" />
-        <span class="text-2xl text-white">Temukan destinasi wisatamu dan bagikan pengalamanmu.</span>
-        <div class="mt-16">
+        <span class="text-2xl text-white ff-outfit">Temukan destinasi wisatamu dan bagikan pengalamanmu.</span>
+        <div class="mt-16 flex gap-6">
           <button class="py-2 px-6 bg-white font-extrabold text-3xl text-teal-900 rounded-full flex items-center gap-3">
-            Download Aplikasi <img src="bahan/bx-donwload.png" alt="" width="40px" />
+            Berpetualang Sekarang
+            <!-- <img src="bahan/bx-donwload.png" alt="" width="40px" /> -->
+          </button>
+          <button class="py-2 px-6 bg-teal-950 font-extrabold text-3xl text-white rounded-full flex items-center gap-3 border-4 border-white">
+            Donwload Aplikasi
           </button>
         </div>
       </div>
     </div>
+    <div class="se2 w-full bg-white flex flex-col items-center py-24" id="jelajah">
+      <div class="w-full max-window">
+        <div class="best-dest mb-16 bg-emerald-300 p-6 rounded-xl w-fit">
+          <span class="ff-outfit text-2xl">Top 3 destinasi minggu ini</span>
+          <div class="list-top-dest flex gap-4 mt-1">
+            <div class="rounded-lg list-wisata" data-kategori="" loading="lazy">
+              <img src="https://i.ibb.co/pJ5pdVf/kbo.jpg" alt="" class="rounded-lg" />
+            </div>
+            <div class="rounded-lg list-wisata" data-kategori="" loading="lazy">
+              <img src="https://i.ibb.co/Sngnh6S/kqng-2.jpg" alt="" class="rounded-lg" />
+            </div>
+            <div class="rounded-lg list-wisata" data-kategori="" loading="lazy">
+              <img src="https://i.ibb.co/rkyjGz2/htmpth.png" alt="" class="rounded-lg" />
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <input
+            type="text"
+            placeholder="Cari Destinasimu"
+            class="search w-full text-2xl py-2 pl-16 pr-6 ff-outfit font-medium border-solid border-2 border-teal-800 rounded-full"
+          />
+          <img src="bahan/search.png" alt="" class="absolute top-2 left-4" width="40px" />
+        </div>
+        <div class="filter-list w-full flex flex-wrap mt-8 gap-4">
+          <div class="items-filter aktif" data-filter="All">Semua</div>
+          <div class="items-filter" data-filter="Gunung">Gunung</div>
+          <div class="items-filter" data-filter="Pantai">Pantai</div>
+          <div class="items-filter" data-filter="Danau">Danau</div>
+          <div class="items-filter" data-filter="Camping">Camping</div>
+          <div class="items-filter" data-filter="Air Terjun">Air Terjun</div>
+          <div class="items-filter" data-filter="Taman">Taman</div>
+          <div class="items-filter" data-filter="Kebun Binatang">Kebun Binatang</div>
+          <div class="items-filter" data-filter="Taman Hiburan">Taman Hiburan</div>
+          <div class="items-filter" data-filter="Rumah Makan">Rumah Makan</div>
+        </div>
+        <div class="parent-wisata w-full flex gap-4 flex-wrap justify-center mt-6"></div>
+      </div>
+    </div>
+
+    <div class="se3 relative w-full flex justify-center" id="sewa">
+      <div class="bg-teal-900 opacity-70 w-full h-full absolute"></div>
+      <div class="max-window relative z-10 py-24">
+        <div class="title text-7xl ff-outfit text-white text-center mb-8">Sewa Jasa</div>
+        <div class="sewa flex flex-wrap gap-6 justify-center">
+          <div class="rounded-xl bg-white p-4 flex gap-4 flex items-center">
+            <img src="bahan/camping.svg" alt="" />
+            <span class="text-4xl font-extrabold">Alat Camping</span>
+          </div>
+          <div class="rounded-xl bg-white p-4 flex gap-4 flex items-center">
+            <img src="bahan/education-school-bus.svg" alt="" />
+            <span class="text-4xl font-extrabold">Transportasi</span>
+          </div>
+          <div class="rounded-xl bg-white p-4 flex gap-4 flex items-center">
+            <img src="bahan/traveling.svg" alt="" />
+            <span class="text-4xl font-extrabold">Tour Guide</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="se4 kritik w-full flex justify-center py-24" id="review">
+      <div class="max-window">
+        <div class="title text-7xl ff-outfit text-center mb-6">Review</div>
+        <div class="login-first title text-2xl ff-outfit mb-6">Login dulu untuk mereview</div>
+        <div class="kolom flex flex-col gap-4"></div>
+      </div>
+    </div>
+
+    <div class="se5 w-full flex justify-center bg-teal-900 py-24" id="faq">
+      <div class="max-window">
+        <div class="title text-7xl ff-outfit text-center mb-6 text-white">FAQ</div>
+        <div class="tanya-jawab flex flex-col gap-6">
+          <div>
+            <div class="tanya text-2xl text-teal-100 flex">
+              <div class="q">Q :&nbsp;</div>
+              Apa perbedaan website mlaku-mlaku dengan aplikasi mlaku-mlaku?
+            </div>
+            <div class="jawab text-2xl flex">
+              <div class="a">A :&nbsp;</div>
+              Website ini untuk tampilan dasar dan sederhana dari mlaku-mlaku, untuk fitur akses lebih lengkkap ada di aplikasi yang bisa didownload lewat
+              Playstore atau AppStore.
+            </div>
+          </div>
+          <div>
+            <div class="tanya text-2xl text-teal-100 flex">
+              <div class="q">Q :&nbsp;</div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, adipisci?
+            </div>
+            <div class="jawab text-2xl flex">
+              <div class="a">A :&nbsp;</div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias consequuntur repellendus quo harum rerum. Ex exercitationem modi numquam dolore
+              alias.
+            </div>
+          </div>
+          <div>
+            <div class="tanya text-2xl text-teal-100 flex">
+              <div class="q">Q :&nbsp;</div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit?
+            </div>
+            <div class="jawab text-2xl flex">
+              <div class="a">A :&nbsp;</div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit similique odio laboriosam!
+            </div>
+          </div>
+          <div>
+            <div class="tanya text-2xl text-teal-100 flex">
+              <div class="q">Q :&nbsp;</div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque?
+            </div>
+            <div class="jawab text-2xl flex">
+              <div class="a">A :&nbsp;</div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam esse quo aperiam autem enim error harum, consectetur facere quod nulla reiciendis
+              magni provident et deleniti suscipit repellat quos alias! Explicabo.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer w-full bg-teal-950 py-24"></div>
   </body>
 </html>
 
 <script>
+  var data = [
+    {
+      full: "gunung",
+      thumb: "https://i.ibb.co/Cw280qW/ssssskkkv2.jpg",
+    },
+    {
+      full: "pantai",
+      thumb: "https://i.ibb.co/GpCMR2r/ddff2.jpg",
+    },
+    {
+      full: "danau",
+      thumb: "https://i.ibb.co/mcS8Cs7/hjb-v1psd.jpg",
+    },
+    {
+      full: "camping",
+      thumb: "https://i.ibb.co/Sngnh6S/kqng-2.jpg",
+    },
+    {
+      full: "air-terjun",
+      thumb: "https://i.ibb.co/Z254zTV/kqng.jpg",
+    },
+    {
+      full: "taman",
+      thumb: "https://i.ibb.co/rkyjGz2/htmpth.png",
+    },
+    {
+      full: "kebun-binatang",
+      thumb: "https://i.ibb.co/ZGn5z9j/1eeer.jpg",
+    },
+    {
+      full: "taman-hiburan",
+      thumb: "https://i.ibb.co/jGgXH8q/drr.jpg",
+    },
+    {
+      full: "https://i.ibb.co/5vj40Z9/fna.png",
+      thumb: "https://i.ibb.co/pZKw7qP/fna.png",
+    },
+    {
+      full: "rumah-makan",
+      thumb: "https://i.ibb.co/rfRhZcW/sds.jpg",
+    },
+    {
+      full: "gunung",
+      thumb: "https://i.ibb.co/g7pB4MX/hem-purple.jpg",
+    },
+    {
+      full: "pantai",
+      thumb: "https://i.ibb.co/c8bSS0L/Bbrr.jpg",
+    },
+    {
+      full: "danau",
+      thumb: "https://i.ibb.co/HXYtVZH/star.png",
+    },
+    {
+      full: "gunung",
+      thumb: "https://i.ibb.co/tx5M214/cklter.png",
+    },
+    {
+      full: "danau",
+      thumb: "https://i.ibb.co/JCW10gp/ble.png",
+    },
+    {
+      full: "kebun-binatang",
+      thumb: "https://i.ibb.co/SJ6t7FN/lia.png",
+    },
+    {
+      full: "air-terjun",
+      thumb: "https://i.ibb.co/7yPvhFT/gtmm.jpg",
+    },
+    {
+      full: "camping",
+      thumb: "https://i.ibb.co/s2JSsZL/azz.png",
+    },
+    {
+      full: "air-terjun",
+      thumb: "https://i.ibb.co/tHDcsD9/kaela.jpg",
+    },
+    {
+      full: "gunung",
+      thumb: "https://i.ibb.co/TPHfzSc/ngdlmaki.jpg",
+    },
+    {
+      full: "danau",
+      thumb: "https://i.ibb.co/pJ5pdVf/kbo.jpg",
+    },
+  ];
+
+  var komen = [
+    {
+      name: "Rengga",
+      komen:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi blanditiis debitis assumenda magnam temporibus, dignissimos aliquam voluptatum ducimus hic veritatis quod placeat ipsam!",
+      perihal: "UX",
+    },
+    {
+      name: "Deta",
+      komen: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, laudantium.",
+      perihal: "Aplikasi",
+    },
+    {
+      name: "Fian",
+      komen:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non vel perferendis debitis et esse at eum facilis similique id. Est, dolores. Modi enim mollitia soluta explicabo blanditiis et odio laborum?",
+      perihal: "UI",
+    },
+    {
+      name: "hicun",
+      komen: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed a optio tenetur rerum nam.",
+      perihal: "Susah login",
+    },
+    {
+      name: "Kukoh",
+      komen: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      perihal: "Size Aplikasi",
+    },
+    {
+      name: "Rahman",
+      komen: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, ad!",
+      perihal: "Iklan",
+    },
+    {
+      name: "Brian",
+      komen: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptate nesciunt deleniti earum assumenda repudiandae.",
+      perihal: "Sewa",
+    },
+  ];
   $(document).on("click", ".menu", function () {
     $(".ditoggle").fadeToggle("fast");
     $("nav.mobile").toggleClass("aktif");
@@ -73,34 +326,132 @@
     // $(this).addClass("aktif");
   });
 
-  // $(window).scroll(function () {
-  //   let scroll = $(window).scrollTop();
-  //   if (scroll > 10) {
-  //     $("nav").css({ background: "white" });
-  //     $("nav.desktop").addClass("aktif");
-  //   } else {
-  //     $("nav").css({ background: "transparent" });
-  //     $("nav.desktop").removeClass("aktif");
-  //   }
-  // });
+  $(window).scroll(function () {
+    let scroll = $(window).scrollTop();
+    if (scroll > 10) {
+      $("nav").css({ background: "white" });
+      $("nav.desktop").addClass("aktif");
+    } else {
+      $("nav").css({ background: "transparent" });
+      $("nav.desktop").removeClass("aktif");
+    }
+  });
 
+  // untuk deteksi posisi scroll untuk navbar
   $(window).on("scroll touchmove", function () {
     $("nav .item").removeClass("aktif");
     if ($(document).scrollTop() == $(".se1").position().top) {
+      $("nav a").css({ color: "white" });
       $("nav .item").removeClass("aktif");
       $(".ahome").addClass("aktif");
     }
     if ($(document).scrollTop() > $(".se1").position().top) {
+      $("nav a").css({ color: "black" });
       $("nav .item").removeClass("aktif");
       $(".ahome").addClass("aktif");
     }
     if ($(document).scrollTop() >= $(".se2").position().top) {
+      $("nav a").css({ color: "black" });
       $("nav .item").removeClass("aktif");
-      $(".aabout").addClass("aktif");
+      $(".ajelajah").addClass("aktif");
     }
     if ($(document).scrollTop() >= $(".se3").position().top) {
+      $("nav a").css({ color: "black" });
       $("nav .item").removeClass("aktif");
-      $(".awhy").addClass("aktif");
+      $(".asewa").addClass("aktif");
     }
+    if ($(document).scrollTop() >= $(".se4").position().top) {
+      $("nav a").css({ color: "black" });
+      $("nav .item").removeClass("aktif");
+      $(".areview").addClass("aktif");
+    }
+    if ($(document).scrollTop() >= $(".se5").position().top) {
+      $("nav a").css({ color: "black" });
+      $("nav .item").removeClass("aktif");
+      $(".afaq").addClass("aktif");
+    }
+  });
+
+  let reverse = data.reverse();
+  $.each(reverse, function (i, v) {
+    $(".parent-wisata").append(`
+    <div class="rounded-lg list-wisata ${v.full}" data-kategori="${v.full}" loading="lazy">
+      <img src="${v.thumb}" alt="" class="rounded-lg">
+    </div>
+    `);
+  });
+
+  $(document).on("click", ".items-filter", function () {
+    $(".items-filter").removeClass("aktif");
+    $(this).addClass("aktif");
+    $(".list-wisata").hide("");
+    let filter = $(this).data("filter");
+    if (filter == "All") {
+      $(".list-wisata").show("fast");
+    } else if (filter == "Gunung") {
+      $(".list-wisata.gunung").show("fast");
+    } else if (filter == "Pantai") {
+      $(".list-wisata.pantai").show("fast");
+    } else if (filter == "Danau") {
+      $(".list-wisata.danau").show("fast");
+    } else if (filter == "Camping") {
+      $(".list-wisata.camping").show("fast");
+    } else if (filter == "Air Terjun") {
+      $(".list-wisata.air-terjun").show("fast");
+    } else if (filter == "Taman") {
+      $(".list-wisata.taman").show("fast");
+    } else if (filter == "Kebun Binatang") {
+      $(".list-wisata.kebun-binatang").show("fast");
+    } else if (filter == "Taman Hiburan") {
+      $(".list-wisata.taman-hiburan").show("fast");
+    } else if (filter == "Rumah Makan") {
+      $(".list-wisata.rumah-makan").show("fast");
+    }
+  });
+
+  $(document).on("keyup", ".search", function () {
+    $(".list-wisata").hide("");
+    let filternya = $(this).val();
+    let filter = filternya.toLowerCase();
+    console.log(filternya, filter.includes("mall"));
+
+    if (filter.includes("All") || filter.includes("all") || filter.includes("semua")) {
+      $(".list-wisata").show("fast");
+    } else if (filter.includes("gunung")) {
+      $(".list-wisata.gunung").show("fast");
+    } else if (filter.includes("pantai")) {
+      $(".list-wisata.pantai").show("fast");
+    } else if (filter.includes("danau")) {
+      $(".list-wisata.danau").show("fast");
+    } else if (filter.includes("camping")) {
+      $(".list-wisata.camping").show("fast");
+    } else if (filter.includes("air") || filter.includes("Terjun")) {
+      $(".list-wisata.air-terjun").show("fast");
+    } else if (filter.includes("taman")) {
+      $(".list-wisata.taman").show("fast");
+    } else if (filter.includes("kebun") || filter.includes("binatang")) {
+      $(".list-wisata.kebun-binatang").show("fast");
+    } else if (filter.includes("taman") || filter.includes("hiburan")) {
+      $(".list-wisata.taman-hiburan").show("fast");
+    } else if (filter.includes("rumah") || filter.includes("makan")) {
+      $(".list-wisata.rumah-makan").show("fast");
+    } else if (filter == "") {
+      $(".list-wisata").show("fast");
+    }
+  });
+
+  $.each(komen, function (i, v) {
+    $(".kolom").append(`
+          <div class="list-komen">
+            <div class="name text-2xl text-teal-900 font-extrabold">${v.name}</div>
+            <div class="komentar">
+              ${v.komen}
+            </div>
+            <div class="perihal font-extrabold">Perihal : ${v.perihal}</div>
+            <div class="w-full flex justify-end">
+              <div class="reply font-extrabold">Balas</div>
+            </div>
+          </div>
+  `);
   });
 </script>

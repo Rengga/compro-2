@@ -3,7 +3,11 @@
 
 * {
   font-family: "Work Sans", sans-serif;
-  color: #184d70;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 .ff-capriola {
   font-family: "Capriola", sans-serif;
@@ -28,6 +32,10 @@
   padding: 0;
 }
 
+nav {
+  z-index: 99;
+}
+
 nav.desktop img {
   width: 100px;
 }
@@ -40,8 +48,22 @@ nav.desktop img {
   position: fixed;
 }
 
+.item.aktif {
+  border: 2px solid white;
+  background-color: #004d40;
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: white !important;
+}
+
 .se1 {
   background-image: url(https://source.unsplash.com/random/?waterfall);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.se3 {
+  background-image: url(https://source.unsplash.com/random/?nature);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -62,4 +84,83 @@ nav a {
 .masuk span,
 .masuk .signup {
   font-weight: 800;
+}
+
+.items-filter {
+  padding: 4px 8px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 2px solid #004d40;
+  background-color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+.items-filter.aktif {
+  background-color: #004d40 !important;
+  color: white;
+}
+
+.parent-wisata {
+  max-height: 700px;
+  overflow: auto;
+}
+
+.list-wisata {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 200px;
+}
+
+.list-wisata img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.sewa img {
+  height: 100px;
+  width: 200px;
+}
+
+.sewa .rounded-xl {
+  width: 484px;
+}
+
+.kolom {
+  overflow: auto;
+  padding: 0 6px 6px 6px;
+  max-height: 600px;
+}
+
+.kolom .list-komen {
+  padding: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 16px;
+  width: 100%;
+}
+
+.login-first {
+  padding: 6px 12px;
+  background-color: #004d40;
+  border-radius: 16px;
+  color: white;
+  width: fit-content;
+  line-height: normal;
+  border: 4px solid #26d1b4;
+}
+
+.list-komen .reply {
+  cursor: pointer;
+}
+
+.tanya,
+.jawab {
+  color: white;
+}
+
+.q,
+.a {
+  min-width: 44px;
+  color: white;
+  font-weight: bold;
 }
